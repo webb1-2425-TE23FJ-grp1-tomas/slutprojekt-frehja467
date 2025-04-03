@@ -14,15 +14,34 @@
           <h2>The Cure</h2>
           <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">Favorites</a></li>
-            <li><a href="">Albums</a></li>
-            <li><a href="">About us</a></li>
             <li><a href="">Songs</a></li>
+            <li><a href="">Albums</a></li>
+            <li><a href="">Recommendations</a></li>
             <li><a href="">Members</a></li>
+            <li><a href="">Merch</a></li>
             <li><a href="">About us</a></li>
            </ul>
         </nav>
+    
+      </div>
+      <button id="toggleHomeButton">Visa Home</button>
     </div>
     </div>
+    </div>  
+  
+  <script>
+    const homeElement = document.getElementById("home");
+    const showHomeButton = document.getElementById("toggleHomeButton");
+
+    showHomeButton.addEventListener("click", function () {
+      if (homeElement.style.display === "none") {
+        homeElement.style.display = "flex";
+        showHomeButton.textContent = "Göm Home"; // Ändra texten på knappen
+      } else {
+        homeElement.style.display = "none";
+        showHomeButton.textContent = "Visa Home"; // Ändra texten på knappen
+      }
+    });
+  </script>
   </body>
 </html>
