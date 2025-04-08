@@ -37,7 +37,6 @@ nav ul {
 nav ul a:hover {
   color: blueviolet;
 }
-
 #toggleHomeButton {
   display: flex;
   justify-content: center;
@@ -61,15 +60,13 @@ nav ul a:hover {
 #toggleHomeButton:hover {
   background-color: #ffaafb;
 }
-.information{
-
-}
 @media screen and (max-width: 570px) {
   body{
     background-color: red;
   }
   nav ul {
     display: grid;
+    width:100%;
     grid-column: 1/5;
     list-style: none;
     padding: 0;
