@@ -1,9 +1,10 @@
 body {
-  display: flex;
+  display: grid;
   background: rgb(55, 71, 65);
   justify-content: center;
   font-family: sans-serif;
 }
+
 .container {
   width: 100%;
   display: grid;
@@ -18,6 +19,8 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
+  border:none;
+  border-radius:30px;
 }
 nav ul a {
   text-decoration: none;
@@ -34,24 +37,34 @@ nav ul {
 nav ul a:hover {
   color: blueviolet;
 }
+
 #toggleHomeButton {
-  padding: 8px 16px;
-  background-color: #4CAF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px; 
+  background-color: #ffffff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
-  font-size: 14px;
-  min-width: 90px;
-  text-align: center;
-  width: 90px;
-  max-height: 30px;
-  white-space: nowrap; /* Förhindra radbrytning av texten */
+  width: 50px; 
+  height: 50px;
+  white-space: nowrap;
+}
+.button-container {
+  grid-column: 1/5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
 }
 #toggleHomeButton:hover {
-  background-color: #367c39;
+  background-color: #ffaafb;
 }
-@media screen and (max-width: 480px) {
+.information{
+
+}
+@media screen and (max-width: 570px) {
   body{
     background-color: red;
   }
@@ -62,7 +75,6 @@ nav ul a:hover {
     padding: 0;
     grid-template-columns:1fr;
     grid-template-rows: repeat(7, 1fr);
-    gap: 30px;
-    
+    gap: 30px;  
   }
 }

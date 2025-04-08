@@ -14,9 +14,9 @@
           <h2>The Cure</h2>
           <ul>
             <li><a href="">Home</a></li>
+            <li><a href="">Information</a></li>
             <li><a href="">Songs</a></li>
             <li><a href="">Albums</a></li>
-            <li><a href="">Recommendations</a></li>
             <li><a href="">Members</a></li>
             <li><a href="">Merch</a></li>
             <li><a href="">About us</a></li>
@@ -24,10 +24,14 @@
         </nav>
     
       </div>
-      <button id="toggleHomeButton">Visa Home</button>
+          <button id="toggleHomeButton">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+             </svg>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>  
+
   
   <script>
     const homeElement = document.getElementById("home");
@@ -36,12 +40,13 @@
     showHomeButton.addEventListener("click", function () {
       if (homeElement.style.display === "none") {
         homeElement.style.display = "flex";
-        showHomeButton.textContent = "Göm Home"; // Ändra texten på knappen
       } else {
         homeElement.style.display = "none";
-        showHomeButton.textContent = "Visa Home"; // Ändra texten på knappen
       }
     });
   </script>
+   
+
+  </div>
   </body>
 </html>
