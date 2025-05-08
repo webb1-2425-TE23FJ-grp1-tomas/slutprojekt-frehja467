@@ -12,24 +12,37 @@ body {
   gap: 10px;
 }
 #header {
-
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+.header-content {
+  display: flex;
+  align-items: center; 
+  width: 100%; 
 }
 h2 {
-  font-size:50px;
+  font-size: 50px;
+  margin-right: 20px;
 }
 #home {
-  background-color: pink;
+  background-color: rgb(43, 58, 52);
   grid-column: 1/5;
   display: flex;
   text-align: flex-start;
   border:none;
   border-radius:10px;
+  padding: 15px;
 }
-#disintegration
+
 nav ul a {
   text-decoration: none;
+  margin-left:50px; /*kolla här nästa */
   color: rgb(43, 194, 194);
+  font-size: 40px;
 }
+
 nav ul {
   display: grid;
   grid-column: 1/5;
@@ -37,6 +50,7 @@ nav ul {
   padding: 0;
   grid-template-columns: repeat(7, 1fr);
   gap: 30px;
+  text-decoration: none;
 }
 nav ul a:hover {
   color: blueviolet;
@@ -52,6 +66,7 @@ nav ul a:hover {
   width: 50px; 
   height: 50px;
   white-space: nowrap;
+  margin-top: 10px;
 }
 .button-container {
   grid-column: 1/5;
@@ -59,11 +74,14 @@ nav ul a:hover {
   justify-content: flex-start;
   align-items: center; 
   padding:20px;
+  padding: 0; 
+  margin-right: 
 }
 #toggleHomeButton:hover {
   background-color: #ffaafb;
 }
-@media screen and (max-width: 570px) {
+  
+@media screen and (max-width: 800px) {
   body{
     background-color: red;
     display:flex;
@@ -78,5 +96,16 @@ nav ul a:hover {
     grid-template-columns:1fr;
     grid-template-rows: repeat(7, 1fr);
     gap: 30px;  
+  }
+  #home {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h2 {
+    margin-bottom: 10px; 
   }
 }
