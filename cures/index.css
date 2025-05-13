@@ -1,42 +1,42 @@
+/*Allt*/
 * {
-  border-radius:20px;
+  border-radius: 20px;
   padding: 10px;
 }
 body {
-   display: grid;
-   background: rgb(55, 71, 65);
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   display:flex;
-   justify-content: center;
-  }
-
+  display: grid;
+  background: rgb(55, 71, 65);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+}
 .container {
   width: 1500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: min-content 500px 500px;
+  grid-template-rows: min-content 400px 500px;
   gap: 20px;
 }
-
+/*Home*/
 #home {
-  background-color:rgb(77, 104, 87);
-  grid-column:1/5;
-  display:grid;
+  background-color: rgb(77, 104, 87);
+  grid-column: 1/5;
+  display: grid;
   grid-template-columns: 1fr min-content;
   align-items: center;
   gap: 20px;
 }
 #home ul {
-  grid-column:4/5;
-  list-style:none;
+  grid-column: 4/5;
+  list-style: none;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 #home a {
-  display: block; 
+  display: block;
   padding: 45px;
-  gap: 5px; 
+  gap: 5px;
   text-decoration: none;
   font-size: 40px;
 }
@@ -46,55 +46,116 @@ nav ul a {
 nav ul a:hover {
   color: rgb(195, 226, 214);
 }
-.information{
-  background-color:rgb(43, 54, 47);
-  grid-column:1/4;
-  display:flex;
+/*Information*/
+.information {
+  background-color: rgb(43, 54, 47);
+  grid-column: 1/4;
+  display: flex;
   flex-direction: column;
 }
-.information h1{
-  font-size:40px;
+.information h1 {
+  font-size: 40px;
   color: rgb(153, 184, 171);
   margin: 0;
-
 }
 .information p {
   font-size: 20px;
   color: rgb(187, 214, 204);
   margin: 0;
-
 }
-.information h2{
-  color:rgb(153, 184, 171);
+.information h2 {
+  color: rgb(153, 184, 171);
   margin: 0;
-
 }
+/*Information bild*/
 .infopic {
-  display:flex;
+  display: flex;
   flex-direction: column;
   background-color: rgb(77, 104, 87);
-  grid-column:4/5;
+  grid-column: 4/5;
 }
 .infopic img {
-  width:90%;
-  height:60%;
-  margin-left:4px;
+  width: 90%;
+  height: 60%;
+  margin-left: 4px;
 }
 .infopic h2 {
   margin: 0;
-  text-align:center;
+  text-align: center;
 }
 .infopic p {
   margin: 0;
-  text-align:center;
-  color:  rgb(195, 231, 206);
+  text-align: center;
+  color: rgb(195, 231, 206);
   font-size: 19px;
 }
-.listen{
-  background-color:aqua;
-  grid-column:1/4;
+/*Lyssna*/
+.listen {
+  background-color: rgb(43, 54, 47);
+  grid-column: 1/2;
 }
-.pictures{
-  background-color: blue;
-  grid-column:4/5;
+.listen h2 {
+  margin:0;
+  font-size: 30px;
+  color: rgb(195, 231, 206);
+  text-align: center;
+  margin-right: 15px;
+}
+.listen ul {
+  grid-column: 4/5;
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+.listen a {
+  display: block;
+  gap: 5px;
+  text-decoration: none;
+  padding:0;
+  font-size:20px
+}
+.listen ul a {
+  color: rgb(175, 201, 181);
+  text-align: center;
+  margin-right: 25px;
+}
+.listen ul a:hover {
+  color: rgb(121, 145, 135);
+}
+.listen img {
+  width:70%;
+  height:40%;
+  margin-left:45px;
+}
+/*Bilder*/
+.picture1 {
+  background-color: rgb(77, 104, 87);
+  grid-column: 2/3;
+}
+.picture1 img {
+  width:90%;
+  margin-left: 7px;
+}
+.picture2 {
+  background-color: rgb(77, 104, 87);
+  grid-column: 3/4;
+}
+.picture2 img {
+  width:90%;
+  margin-left: 7px;
+}
+.picture3 {
+  background-color: rgb(77, 104, 87);
+  grid-column: 4/5;
+  text-align: center;
+}
+.picture3 p {
+  margin:0;
+  padding:0;
+  color: rgb(175, 201, 181);
+  font-size: 18px;
+}
+.picture3 img {
+  width:90%;
+  margin-left: 7px;
 }
