@@ -9,8 +9,8 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: center;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1500px;
@@ -97,7 +97,7 @@ nav ul a:hover {
   grid-column: 1/2;
 }
 .listen h2 {
-  margin:0;
+  margin: 0;
   font-size: 30px;
   color: rgb(195, 231, 206);
   text-align: center;
@@ -107,14 +107,14 @@ nav ul a:hover {
   grid-column: 4/5;
   list-style: none;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 .listen a {
   display: block;
   gap: 5px;
   text-decoration: none;
-  padding:0;
-  font-size:20px
+  padding: 0;
+  font-size: 20px;
 }
 .listen ul a {
   color: rgb(175, 201, 181);
@@ -125,9 +125,9 @@ nav ul a:hover {
   color: rgb(121, 145, 135);
 }
 .listen img {
-  width:70%;
-  height:40%;
-  margin-left:45px;
+  width: 70%;
+  height: 40%;
+  margin-left: 45px;
 }
 /*Bilder*/
 .picture1 {
@@ -135,7 +135,7 @@ nav ul a:hover {
   grid-column: 2/3;
 }
 .picture1 img {
-  width:90%;
+  width: 90%;
   margin-left: 7px;
 }
 .picture2 {
@@ -143,7 +143,7 @@ nav ul a:hover {
   grid-column: 3/4;
 }
 .picture2 img {
-  width:90%;
+  width: 90%;
   margin-left: 7px;
 }
 .picture3 {
@@ -152,12 +152,12 @@ nav ul a:hover {
   text-align: center;
 }
 .picture3 p {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   color: rgb(175, 201, 181);
   font-size: 18px;
 }
 .picture3 img {
-  width:90%;
+  width: 90%;
   margin-left: 7px;
 }
