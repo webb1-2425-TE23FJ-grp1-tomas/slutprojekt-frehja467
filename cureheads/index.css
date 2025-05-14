@@ -5,18 +5,18 @@
 }
 body {
   display: grid;
-  background: rgb(65, 27, 27); 
+  background: rgb(65, 27, 27);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: center;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:repeat(7, min-content);
+  grid-template-rows: repeat(7, min-content);
   gap: 20px;
 }
 /*Home*/
@@ -44,10 +44,12 @@ body {
 }
 nav ul a {
   color: rgb(216, 147, 147);
+  transition: 0.5s;
 }
 nav ul a:hover {
   color: rgb(255, 192, 192);
 }
+
 /*Header*/
 .header {
   background-color: rgb(32, 29, 54);
@@ -55,17 +57,17 @@ nav ul a:hover {
 }
 .header h2 {
   color: rgb(155, 162, 226);
-  font-size:30px;
-  margin:0;
-  text-align:center;
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
 }
 .header h4 {
   color: rgb(155, 162, 226);
-  font-size:20px;
+  font-size: 20px;
   margin: 0;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   padding: 0;
-  text-align:center;
+  text-align: center;
 }
 /*Popular*/
 .popular {
@@ -74,29 +76,61 @@ nav ul a:hover {
 .popular h2 {
   text-align: center;
   margin: 0;
-  padding:0;
+  padding: 0;
   color: rgb(216, 147, 147);
   margin-bottom: 15px;
 }
 .popular img {
-  width:80%;
-  margin-top:20px;
-  margin-left:10%;
-  padding:0;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  padding: 0;
 }
 .latest {
   background-color: rgb(51, 14, 14);
-  grid-column:2/4;
+  grid-column: 2/4;
 }
 .latest h2 {
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
   padding: 0;
   color: rgb(216, 147, 147);
 }
 .latest img {
-  width:70%;
-  margin-left:100px;
-  margin-top: 15px;;
+  width: 70%;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+/*javascript*/
+.btn {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(216, 147, 147);
+  cursor: pointer;
+  background-color: rgb(32, 8, 8);
+  text-align: center;
+  width: 100px;
+  margin: 10px;
+  margin-left: 30%;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: rgb(95, 43, 43);
+  color: white;
+}
+.wishinfo {
+  text-align: center;
+}
+.hidden {
+  display: none;
+  padding: 0;
+
+}
+.wishinfo p {
+  color: rgb(216, 147, 147);
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
 }
