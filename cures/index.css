@@ -1,6 +1,6 @@
 /*Allt*/
 * {
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 10px;
 }
 body {
@@ -9,6 +9,8 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: center;
+  margin:0;
+  padding:0;
 }
 .container {
   width: 1500px;

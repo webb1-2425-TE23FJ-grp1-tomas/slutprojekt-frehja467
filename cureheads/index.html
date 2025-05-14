@@ -4,53 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    
     <script src="index.js"></script>
     <title>Cureheads</title>
   </head>
   <body>
     <div class="container">
-      <div id="home">
-        <nav id="header">
-          <div class="header-content">
-            <h2><img src="img/logo.webp" alt="The Cure" width="400" height="150"></h2>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Information</a></li>
-              <li><a href="">Songs</a></li>
-              <li><a href="">Albums</a></li>
-              <li><a href="">Members</a></li>
-              <li><a href="">Merch</a></li>
-              <li><a href="">About us</a></li>
-           </ul>
-          </div>
-        </nav>
+      <nav id="home">
+        <img src="imgs/logo.webp" alt="Logo" />
+        <ul>
+          <li>
+            <a
+              href="https://laughing-fiesta-5g4wgjxg4rx62775j-5500.app.github.dev/cures/"
+              >Home</a
+            >
+          </li>
+          <li><a href="#">Albums</a></li>
+          <li><a href="">Songs</a></li>
+          <li><a href="">Members</a></li>
+        </ul>
+      </nav>
+      <div class="header">
+        <h2>Most Popular Albums</h2>
+        <h4>
+          They're popular for a reason, check them out!
+        </h4>
       </div>
-          <button id="toggleHomeButton">
-            <div class="button-container">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
-                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-             </svg>
-            </div>     
-        <div class="information">Information</div>
-        <div class="listen">Listen</div>
-        <div class="pictures">Pictures</div>
-        
+      <div class="popular">
+        <img src="imgs/wish.jpg" alt="Wish" />
+        <h2>Wish</h2>
+      </div>
+      <div class="popular">
+        <img src="imgs/disintegration.jpg" alt="Disintegration" />
+        <h2>Disintegration</h2>
+      </div>
 
-        </div>
-     </div>
-  
-    <script>
-    const homeElement = document.getElementById("home");
-    const showHomeButton = document.getElementById("toggleHomeButton");
+      <div class="popular">
+        <img src="imgs/headondoor.jpg" alt="Headondoor" />
+        <h2>The Head On The Door</h2>
+      </div>
+      <div class="popular">
+        <img src="imgs/kissme.jpg" alt="Kiss Me" />
+        <h2>Kiss Me Kiss Me Kiss Me</h2>
+      </div>
+      <div class="header">
+        <h2>Underground</h2>
+        <h4>Check out their less known albums!</h4>
+      </div>
+      <div class="popular">
+        <img src="imgs/thetop.jpg" alt="The Top" />
+        <h2>The Top</h2>
+      </div>
 
-    showHomeButton.addEventListener("click", function () {
-      if (homeElement.style.display === "none") {
-        homeElement.style.display = "flex";
-      } else {
-        homeElement.style.display = "none";
-      }
-    });
-    </script>
+      <div class="popular">
+        <img src="imgs/faith.jpg" alt="Faith" />
+        <h2>Faith</h2>
+      </div>
+      <div class="popular">
+        <img src="imgs/413dream.jpg" alt="4:13 Dream" />
+        <h2>4:13 Dream</h2>
+      </div>
+      <div class="popular">
+        <img src="imgs/wildmoodswings.jpg" alt="Wild Mood Swings" />
+        <h2>Wild Mood Swings</h2>
+      </div>
+      <div class="header">
+        <h2>Latest Album</h2>
+        <h4>Care to listen to something more recent?</h4>
+      </div>
+      <div class="latest">
+        <img src="imgs/songsoflostworld.jpg" alt="Songs Of A Lost World" />
+        <h2>Songs Of A Lost World</h2>
+      </div>
+    </div>
   </body>
 </html>
