@@ -2,43 +2,35 @@
 * {
   border-radius: 15px;
   padding: 10px;
+  margin-top: 5px;
 }
 body {
-  display: grid;
   background: rgb(55, 71, 65);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  display: flex;
-  justify-content: center;
-  margin: 0;
   padding: 0;
-}
-.container {
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: min-content 400px 500px;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #home {
   background-color: rgb(77, 104, 87);
   grid-column: 1/5;
   display: grid;
-  grid-row: 1fr;
   grid-template-columns: 1fr min-content;
   align-items: center;
 }
 #home ul {
-  grid-column: 4/5;
   list-style: none;
-  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align:center;
 }
 #home a {
   display: block;
-  padding: 45px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 20px;
+  padding: 0;
+  margin-right:30px;
+}
+#home img {
+  padding: 5px;
 }
 nav ul a {
   color: rgb(161, 185, 167);
@@ -46,39 +38,6 @@ nav ul a {
 nav ul a:hover {
   color: rgb(195, 226, 214);
 }
-@media screen and (min-width: 1400px){
-.container {
-  width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: min-content 400px 500px;
-  gap: 20px;
-}
-/*Home*/
-#home {
-  background-color: rgb(77, 104, 87);
-  grid-column: 1/5;
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  align-items: center;
-  gap: 20px;
-}
-#home ul {
-  grid-column: 4/5;
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#home a {
-  display: block;
-  padding: 45px;
-  gap: 5px;
-  text-decoration: none;
-  font-size: 40px;
-}
-
-/*Information*/
 .information {
   background-color: rgb(43, 54, 47);
   grid-column: 1/4;
@@ -99,7 +58,6 @@ nav ul a:hover {
   color: rgb(153, 184, 171);
   margin: 0;
 }
-/*Information bild*/
 .infopic {
   display: flex;
   flex-direction: column;
@@ -121,7 +79,6 @@ nav ul a:hover {
   color: rgb(195, 231, 206);
   font-size: 19px;
 }
-/*Lyssna*/
 .listen {
   background-color: rgb(43, 54, 47);
   grid-column: 1/2;
@@ -155,18 +112,17 @@ nav ul a:hover {
   color: rgb(121, 145, 135);
 }
 .listen img {
-  width: 70%;
-  height: 40%;
-  margin-left: 45px;
+  width: 50%;
+  height: 30%;
+  margin-left: 20%;
 }
-/*Bilder*/
 .picture1 {
   background-color: rgb(77, 104, 87);
   grid-column: 2/3;
 }
 .picture1 img {
   width: 90%;
-  margin-left: 7px;
+  margin-left:5px;
 }
 .picture2 {
   background-color: rgb(77, 104, 87);
@@ -174,7 +130,7 @@ nav ul a:hover {
 }
 .picture2 img {
   width: 90%;
-  margin-left: 7px;
+  margin-left:5px;
 }
 .picture3 {
   background-color: rgb(77, 104, 87);
@@ -189,7 +145,123 @@ nav ul a:hover {
 }
 .picture3 img {
   width: 90%;
-  margin-left: 7px;
 }
-}
+@media screen and (min-width: 1400px) {
+  body {
+    display: grid;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content 400px 500px;
+    gap: 20px;
+  }
 
+  #home {
+    grid-template-columns: 1fr min-content;
+    width: 1500px;
+  }
+  #home ul {
+    grid-column: 4/5;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #home a {
+    padding: 45px;
+    gap: 5px;
+    font-size: 40px;
+  }
+  #home img {
+    padding: 50px;
+  }
+  /*Information*/
+  .information {
+    background-color: rgb(43, 54, 47);
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+  }
+  .information h1 {
+    font-size: 40px;
+    color: rgb(153, 184, 171);
+    margin: 0;
+  }
+  .information p {
+    font-size: 20px;
+    color: rgb(187, 214, 204);
+    margin: 0;
+  }
+  .information h2 {
+    color: rgb(153, 184, 171);
+    margin: 0;
+  }
+  /*Information bild*/
+  .infopic {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(77, 104, 87);
+    grid-column: 4/5;
+  }
+  .infopic img {
+    width: 90%;
+    height: 60%;
+    margin-left: 4px;
+  }
+  .infopic h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .infopic p {
+    margin: 0;
+    text-align: center;
+    color: rgb(195, 231, 206);
+    font-size: 19px;
+  }
+  /*Lyssna*/ /*.listen {
+    background-color: rgb(43, 54, 47);
+    grid-column: 1/2;
+  }
+ 
+  
+  
+  }*/
+  .listen {
+    background-color: rgb(43, 54, 47);
+    grid-column: 1/2;
+  }
+  .listen h2 {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(195, 231, 206);
+    text-align: center;
+    margin-right: 15px;
+  }
+  .listen h2 {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(195, 231, 206);
+    text-align: center;
+    margin-right: 15px;
+  }
+  .listen img {
+    margin-left: 70px;
+  }
+  .picture3 {
+    background-color: rgb(77, 104, 87);
+    grid-column: 4/5;
+    text-align: center;
+  }
+  .picture3 p {
+    margin: 0;
+    padding: 0;
+    color: rgb(175, 201, 181);
+    font-size: 18px;
+  }
+  .picture3 img {
+    width: 90%;
+    margin-left: 7px;
+  }
+}
