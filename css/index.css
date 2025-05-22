@@ -433,18 +433,18 @@ nav ul a:hover {
   flex-direction: column;
   align-items: center;
 }
-.listen a {
-  display: block;
-  text-decoration: none;
-  padding: 5px 0;
-  font-size: 18px;
-  width: 100%;
-  text-align: center;
-}
+
 .listen ul a {
   color: rgb(175, 201, 181);
   margin-right: 0;
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
+
 .listen ul a:hover {
   color: rgb(121, 145, 135);
 }
