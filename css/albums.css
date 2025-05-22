@@ -2,31 +2,63 @@
 * {
   border-radius: 15px;
   padding: 10px;
+  margin-top: 5px;
 }
 body {
-  display: grid;
   background: rgb(65, 27, 27);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+  display:grid;
+
 }
-.container {
-  width: 1500px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(7, min-content);
-  gap: 20px;
-}
+
 /*Home*/
 #home {
+  background-color: rgb(77, 104, 87);
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  left:5%;
+  right:5%;
+  position:sticky;
+  top:0;
+  margin:0;
+  border-radius: 5px;
+}#home {
   background-color: rgb(51, 14, 14);
   grid-column: 1/5;
   display: grid;
   grid-template-columns: 1fr min-content;
   align-items: center;
-  gap: 20px;
+  left:5%;
+  right:5%;
+  position:sticky;
+  top:0;
+  margin:0;
+  border-radius: 5px;
+}
+#home ul {
+  list-style: none;
+  margin: 0;
+  display: grid;
+}
+#home a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0;
+  margin-right:30px;
+}
+#home img {
+  padding: 5px;
+}
+nav ul a {
+  color: rgb(161, 185, 167);
+}
+nav ul a:hover {
+  color: rgb(195, 226, 214);
 }
 #home ul {
   grid-column: 4/5;
@@ -183,4 +215,40 @@ nav ul a:hover {
   padding: 0;
   margin: 0;
   font-size: 15px;
+}
+@media screen and (min-width:1400px){
+.container {
+  width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, min-content);
+  gap: 20px;
+}
+  #home {
+    grid-template-columns: 1fr min-content;
+    width: 1500px;
+    border-radius: 15px;
+  }
+  #home ul {
+  grid-column: 4/5;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home a {
+  display: block;
+  padding: 45px;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 40px;
+}
+nav ul a {
+  color: rgb(216, 147, 147);
+  transition: 0.5s;
+}
+nav ul a:hover {
+  color: rgb(255, 192, 192);
+}
+
 }
