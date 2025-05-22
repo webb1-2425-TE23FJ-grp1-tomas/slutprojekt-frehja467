@@ -66,10 +66,20 @@
       </div>
       <div class="picture1">
         <img src="img/robertsmith370p.webp" alt="Robert Smith" />
-        <img src="img/robsmith370px.webp" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+          inventore laborum porro odio, cumque totam itaque? Nobis eum qui
+          adipisci minima omnis odio reprehenderit labore quos quam ut. In,
+          voluptas.
+        </p>
       </div>
       <div class="picture2">
-        <img src="img/simongallup370px.webp" alt="Simon Gallup" />
+        <picture
+          ><source
+            media="(min-width: 1400px)"
+            srcset="img/simongallup1400px.webp" />
+          <img src="img/simongallup370px.webp" alt="Simon Gallup"
+        /></picture>
       </div>
       <div class="picture3">
         <img src="img/jasoncooper370px.webp" alt="Jason Cooper" />
@@ -79,10 +89,6 @@
           laboriosam laborum.
         </p>
       </div>
-      <script src="js/simple-lightbox.min.js"></script>
-      <script>
-        var lightbox = new SimpleLightbox(".gallery a", {});
-      </script>
     </div>
   </body>
 </html>
