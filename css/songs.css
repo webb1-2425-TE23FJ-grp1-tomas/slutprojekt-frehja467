@@ -88,7 +88,7 @@ nav ul a:hover {
   color: rgb(0, 0, 0);
   font-size: 45px;
   transition: 0.5s;
-  cursor:pointer;
+  cursor: pointer;
 }
 .songlist p {
   font-size: 20px;
@@ -100,6 +100,7 @@ nav ul a:hover {
 @media screen and (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
+    width: 90%;
     gap: 15px;
   }
   #home {
