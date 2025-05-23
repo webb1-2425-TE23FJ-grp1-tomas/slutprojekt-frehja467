@@ -51,7 +51,7 @@ body {
   padding: 5px;
   max-width: 80px;
   height: auto;
-}
+} */
 nav ul a {
   color: rgb(161, 185, 167);
 }
@@ -116,15 +116,13 @@ nav ul a:hover {
   flex-direction: column;
   align-items: center;
 }
-.listen a {
+.listen ul a {
   display: block;
   text-decoration: none;
-  padding: 5px 0;
+  padding: 0;
   font-size: 18px;
   width: 100%;
   text-align: center;
-}
-.listen ul a {
   color: rgb(175, 201, 181);
   margin-right: 0;
 }
@@ -165,146 +163,6 @@ nav ul a:hover {
   color: rgb(175, 201, 181);
   font-size: 16px;
 }
-@media screen and (min-width: 770px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    width: 90%;
-  }
-
-  #home {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  #home ul {
-    flex-wrap: nowrap;
-  }
-  #home a {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-right: 20px;
-  }
-  #home img {
-    max-width: 120px;
-  }
-  .information {
-    grid-column: 1 / -1;
-  }
-  .infopic {
-    grid-column: 1 / -1;
-  }
-  .listen {
-    grid-column: 1 / 2;
-  }
-  .picture1 {
-    grid-column: 2 / 3;
-  }
-  .picture2 {
-    grid-column: 1 / 2;
-  }
-  .picture3 {
-    grid-column: 2 / 3;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 1500px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: min-content 400px 500px;
-    gap: 20px;
-  }
-
-  #home {
-    width: 1500px;
-    grid-column: 1 / 5;
-    grid-template-columns: 1fr min-content;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-  }
-  #home ul {
-    grid-column: 4/5;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: flex-end;
-  }
-  #home a {
-    padding: 45px;
-    font-size: 40px;
-    margin-right: 30px;
-  }
-  #home img {
-    max-width: none;
-  }
-  .information {
-    grid-column: 1 / 4;
-  }
-  .information h1 {
-    font-size: 40px;
-  }
-  .information p {
-    font-size: 25px;
-  }
-  .infopic {
-    grid-column: 4 / 5;
-  }
-  .infopic img {
-    height: 60%;
-    margin-left: 4px;
-  }
-  .infopic p {
-    font-size: 19px;
-  }
-
-  .listen {
-    grid-column: 1 / 2;
-  }
-  .listen h2 {
-    font-size: 30px;
-    margin-right: 15px;
-  }
-  .listen ul {
-    display: block;
-  }
-  .listen a {
-    font-size: 20px;
-  }
-  .listen ul a {
-    text-align: center;
-    margin-right: 25px;
-  }
-  .listen img {
-    width: 50%;
-    height: 30%;
-    margin-left: 20%;
-  }
-
-  .picture1 {
-    grid-column: 2 / 3;
-  }
-  .picture1 img {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .picture2 {
-    grid-column: 3 / 4;
-  }
-  .picture2 img {
-    width: 80%;
-  }
-  .picture3 {
-    grid-column: 4 / 5;
-  }
-  .picture3 p {
-    font-size: 18px;
-  }
-  .picture3 img {
-    width: 90%;
-  }
-}
 .information {
   grid-column: 1/4;
 }
@@ -338,7 +196,7 @@ body {
 }
 
 #home {
-  background-color: rgb(77, 104, 87);
+  background-color: rgb(65, 88, 74);
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
@@ -369,6 +227,8 @@ body {
   padding: 5px;
   max-width: 80px;
   height: auto;
+  margin-right:90px;
+  margin-left: 60px;
 }
 nav ul a {
   color: rgb(161, 185, 167);
@@ -481,20 +341,20 @@ nav ul a:hover {
 .picture3 p {
   color: rgb(175, 201, 181);
   font-size: 16px;
-}
-@media screen and (max-width: 787px) {
+} 
+@media screen and (max-width: 654px) {
   .information {
-    max-width: 89%;
+    max-width: 85%;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
     gap: 15px;
     width: 90%;
   }
   #home {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; 
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
@@ -503,24 +363,26 @@ nav ul a:hover {
     flex-wrap: nowrap;
   }
   #home a {
-    font-size: 18px;
+    font-size: 30px;
     padding: 10px 20px;
     margin-right: 20px;
   }
   #home img {
-    max-width: 120px;
+    max-width: 150px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .information {
-    grid-column: 1 / -1;
+    grid-column: 1 / 2; 
   }
   .infopic {
-    grid-column: 1 / -1;
+    grid-column: 2 / 3; 
   }
   .listen {
-    grid-column: 1 / 2;
+    grid-column: 1 / 2; 
   }
   .picture1 {
-    grid-column: 2 / 3;
+    grid-column: 2 / 3; 
   }
   .picture2 {
     grid-column: 1 / 2;
@@ -536,6 +398,103 @@ nav ul a:hover {
     grid-template-rows: min-content 400px 500px;
     gap: 20px;
   }
+  #home {
+    width: 1500px;
+    grid-column: 1 / 5;
+    grid-template-columns: 1fr min-content;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  #home ul {
+    grid-column: 4/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-end;
+  }
+  #home a {
+    padding: 45px;
+    font-size: 40px;
+    margin-right: 30px;
+  }
+  #home img {
+    max-width: none;
+    margin-right:0;
+    margin-left: 0;
+  }
+  .information {
+    grid-column: 1 / 4;
+  }
+  .information h1 {
+    font-size: 40px;
+  }
+  .information p {
+    font-size: 25px;
+  }
+  .infopic {
+    grid-column: 4 / 5;
+  }
+  .infopic img {
+    height: 60%;
+    margin-left: 4px;
+  }
+  .infopic p {
+    font-size: 19px;
+  }
+  .listen {
+    grid-column: 1 / 2;
+  }
+  .listen h2 {
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  .listen ul {
+    display: block;
+  }
+  .listen a {
+    font-size: 20px;
+  }
+  .listen ul a {
+    text-align: center;
+    margin-right: 25px;
+  }
+  .listen img {
+    width: 50%;
+    height: 30%;
+    margin-left: 20%;
+  }
+
+  .picture1 {
+    grid-column: 2 / 3;
+  }
+  .picture1 img {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .picture2 {
+    grid-column: 3 / 4;
+  }
+  .picture2 img {
+    width: 80%;
+  }
+  .picture3 {
+    grid-column: 4 / 5;
+  }
+  .picture3 p {
+    font-size: 18px;
+  }
+  .picture3 img {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content 400px 500px;
+    gap: 20px;
+  }
+
   #home {
     width: 1500px;
     grid-column: 1 / 5;
@@ -575,8 +534,9 @@ nav ul a:hover {
     margin-left: 4px;
   }
   .infopic p {
-    font-size: 19px;
+    font-size: 25px;
   }
+
   .listen {
     grid-column: 1 / 2;
   }
@@ -587,12 +547,10 @@ nav ul a:hover {
   .listen ul {
     display: block;
   }
-  .listen a {
-    font-size: 20px;
-  }
   .listen ul a {
     text-align: center;
     margin-right: 25px;
+    font-size: 22px;
   }
   .listen img {
     width: 50%;
