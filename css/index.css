@@ -48,12 +48,16 @@ body {
   text-align: center;
 }
 #home img {
+   width: 120px;
+  height: auto; 
   padding: 5px;
-  max-width: 80px;
-  height: auto;
-} */
+  margin-right: 40px;
+  margin-left: 0;
+}
 nav ul a {
   color: rgb(161, 185, 167);
+  transition: 0.5s;
+  margin-top:0;
 }
 nav ul a:hover {
   color: rgb(195, 226, 214);
@@ -63,6 +67,7 @@ nav ul a:hover {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .information h1 {
   font-size: 28px;
@@ -83,6 +88,7 @@ nav ul a:hover {
   flex-direction: column;
   background-color: rgb(77, 104, 87);
   grid-column: 1 / -1;
+  text-align: center;
 }
 .infopic img {
   width: 90%;
@@ -105,7 +111,7 @@ nav ul a:hover {
   margin: 0;
   font-size: 24px;
   color: rgb(195, 231, 206);
-  text-align: center;
+  text-align: center; 
   margin-right: 0;
 }
 .listen ul {
@@ -122,7 +128,7 @@ nav ul a:hover {
   padding: 0;
   font-size: 18px;
   width: 100%;
-  text-align: center;
+  text-align: center; 
   color: rgb(175, 201, 181);
   margin-right: 0;
 }
@@ -140,7 +146,7 @@ nav ul a:hover {
 .picture3 {
   background-color: rgb(77, 104, 87);
   grid-column: 1 / -1;
-  text-align: center;
+  text-align: center; 
 }
 .picture1 img,
 .picture2 img,
@@ -163,193 +169,21 @@ nav ul a:hover {
   color: rgb(175, 201, 181);
   font-size: 16px;
 }
-.information {
-  grid-column: 1/4;
-}
-.infopic {
-  grid-column: 4/5;
-}
-.listen {
-  grid-column: 1/2;
-}
 
-* {
-  border-radius: 15px;
-  padding: 10px;
-  margin-top: 5px;
-}
-body {
-  background: rgb(55, 71, 65);
-  padding: 0;
-  margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  display: flex;
-  justify-content: center;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, min-content);
-  gap: 10px;
-  width: 95%;
-  max-width: 1500px;
-}
-
-#home {
-  background-color: rgb(65, 88, 74);
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  margin: 0;
-  border-radius: 5px;
-  padding: 5px;
-}
-#home ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#home a {
-  display: block;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 5px 10px;
-  margin-right: 0;
-  text-align: center;
-}
-#home img {
-  padding: 5px;
-  max-width: 80px;
-  height: auto;
-  margin-right:90px;
-  margin-left: 60px;
-}
-nav ul a {
-  color: rgb(161, 185, 167);
-}
-nav ul a:hover {
-  color: rgb(195, 226, 214);
-}
-.information {
-  background-color: rgb(43, 54, 47);
-  grid-column: 1 / 4;
-  display: flex;
-  flex-direction: column;
-}
-.information h1 {
-  font-size: 28px;
-  color: rgb(153, 184, 171);
-  margin: 0;
-}
-.information p {
-  font-size: 14px;
-  color: rgb(187, 214, 204);
-  margin: 0;
-}
-.information h2 {
-  color: rgb(153, 184, 171);
-  margin: 0;
-}
-.infopic {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(77, 104, 87);
-  grid-column: 1 / -1;
-}
-.infopic p {
-  margin: 0;
-  text-align: center;
-  color: rgb(195, 231, 206);
-  font-size: 16px;
-}
-.listen {
-  background-color: rgb(43, 54, 47);
-  grid-column: 1 / -1;
-}
-.listen h2 {
-  margin: 0;
-  font-size: 24px;
-  color: rgb(195, 231, 206);
-  text-align: center;
-  margin-right: 0;
-}
-.listen ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.listen ul a {
-  color: rgb(175, 201, 181);
-  margin-right: 0;
-  padding: 0;
-  display: block;
-  text-decoration: none;
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-.listen ul a:hover {
-  color: rgb(121, 145, 135);
-}
-.listen img {
-  height:100%;
-  width: 100%;
-  display:flex;
-  align-items: center;
-  margin-left:50px;
-}
-.picture1,
-.picture2,
-.picture3 {
-  background-color: rgb(77, 104, 87);
-  grid-column: 1 / -1;
-  text-align: center;
-}
-.picture1 img,
-.picture2 img,
-.picture3 img {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  padding: 5px;
-}
-.picture1 p,
-.picture2 p,
-.picture3 p {
-  margin: 0;
-  text-align: center;
-  color: rgb(195, 231, 206);
-  font-size: 16px;
-}
-.picture3 p {
-  color: rgb(175, 201, 181);
-  font-size: 16px;
-} 
 @media screen and (max-width: 654px) {
   .information {
     max-width: 85%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
     width: 90%;
   }
   #home {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
@@ -364,119 +198,32 @@ nav ul a:hover {
   }
   #home img {
     max-width: 150px;
+    width: auto; 
     margin-right: 0;
     margin-left: 0;
   }
   .information {
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
+    text-align: left; 
   }
   .infopic {
-    grid-column: 2 / 3; 
-  }
-  .listen {
-    grid-column: 1 / 2; 
-  }
-  .picture1 {
-    grid-column: 2 / 3; 
-  }
-  .picture2 {
-    grid-column: 1 / 2;
-  }
-  .picture3 {
     grid-column: 2 / 3;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 1500px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: min-content 400px 500px;
-    gap: 20px;
-  }
-  #home {
-    width: 1500px;
-    grid-column: 1 / 5;
-    grid-template-columns: 1fr min-content;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-  }
-  #home ul {
-    grid-column: 4/5;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: flex-end;
-  }
-  #home a {
-    padding: 45px;
-    font-size: 40px;
-    margin-right: 30px;
-  }
-  #home img {
-    max-width: none;
-    margin-right:0;
-    margin-left: 0;
-  }
-  .information {
-    grid-column: 1 / 4;
-  }
-  .information h1 {
-    font-size: 40px;
-  }
-  .information p {
-    font-size: 25px;
-  }
-  .infopic {
-    grid-column: 4 / 5;
-  }
-  .infopic p {
-    font-size: 19px;
-  }
-  .listen {
-    grid-column: 1 / 2;
-  }
-  .listen h2 {
-    font-size: 30px;
-    margin-right: 15px;
-  }
-  .listen ul {
-    display: block;
-  }
-  .listen a {
-    font-size: 20px;
-  }
-  .listen ul a {
     text-align: center;
-    margin-right: 25px;
-    padding:0;
   }
-  .listen img {
-    width: 100%;
-    height: 30%;
-    margin-left: 20%;
+  .infopic p{
+    font-size:26px;
   }
-
+  .listen {
+    grid-column: 1 / 2;
+  }
   .picture1 {
     grid-column: 2 / 3;
   }
-  .picture1 img {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
   .picture2 {
-    grid-column: 3 / 4;
-  }
-  .picture2 img {
-    width: 80%;
+    grid-column: 1 / 2;
   }
   .picture3 {
-    grid-column: 4 / 5;
-  }
-  .picture3 p {
-    font-size: 18px;
-  }
-  .picture3 img {
-    width: 90%;
+    grid-column: 2 / 3;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -554,8 +301,7 @@ nav ul a:hover {
     grid-column: 2 / 3;
   }
   .picture1 img {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-right:10px;
   }
   .picture2 {
     grid-column: 3 / 4;

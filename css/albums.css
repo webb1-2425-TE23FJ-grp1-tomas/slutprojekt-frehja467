@@ -48,21 +48,24 @@ body {
   text-align: center;
 }
 #home img {
+  width: 120px;
+  height: auto; 
+  padding: 5px;
   margin-right: 40px;
+  margin-left: 0; 
 }
 nav ul a {
   color: rgb(216, 147, 147);
   transition: 0.5s;
+  margin-top:0;
 }
 nav ul a:hover {
   color: rgb(255, 192, 192);
 }
-#home img {
-  padding: 5px;
-}
 .header {
   background-color: rgb(32, 29, 54);
   grid-column: 1/-1;
+  text-align: center;
 }
 .header h2 {
   color: rgb(155, 162, 226);
@@ -76,22 +79,25 @@ nav ul a:hover {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  text-align: center;
+  text-align: center; 
 }
 .popular {
   background-color: rgb(51, 14, 14);
+  
+  text-align: center;
 }
 .popular img {
   width: 80%;
-  display: flex;
-  align-items: center;
-  margin-left: 25px;
+ 
+  margin: 0 auto;
+  display: block;
 }
 .latest {
   background-color: rgb(51, 14, 14);
+  text-align: center;
 }
 .latest h2 {
-  text-align: center;
+  text-align: center; 
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -99,13 +105,11 @@ nav ul a:hover {
 }
 .latest img {
   width: 80%;
-  display: flex;
-  margin-left: 25px;
-  margin-right: 25px;
+
+  margin: 0 auto;
+  display: block;
   margin-top: 15px;
 }
-
-/*javascript*/
 .hidden {
   display: none;
   padding: 0;
@@ -121,14 +125,14 @@ nav ul a:hover {
 .songslostworld {
   text-align: center;
 }
-.wishinfo,
-.disinfo,
-.headdoorinfo,
-.kissmeinfo,
-.thetopinfo,
-.faithinfo,
-.dreaminfo,
-.wildmoodswings,
+.wishinfo p,
+.disinfo p,
+.headdoorinfo p,
+.kissmeinfo p,
+.thetopinfo p,
+.faithinfo p,
+.dreaminfo p,
+.wildmoodswings p,
 .songslostworld p {
   color: rgb(216, 147, 147);
   padding: 0;
@@ -150,11 +154,10 @@ nav ul a:hover {
   color: rgb(216, 147, 147);
   cursor: pointer;
   background-color: rgb(32, 8, 8);
-  margin: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 10px auto; 
+  display: block;
   transition: 0.5s;
-  text-align: center;
+  text-align: center; 
 }
 .btn:hover,
 .btn2:hover,
@@ -189,7 +192,7 @@ nav ul a:hover {
     margin-right: 20px;
   }
   #home img {
-    max-width: 150px;
+    width: auto; 
     margin-right: 0;
     margin-left: 0;
   }
@@ -198,15 +201,33 @@ nav ul a:hover {
   }
   .header {
     grid-column: 1 / -1;
+    text-align: center; 
   }
   .popular {
-    grid-column: span 1; /*vrje popular div tar en column så d blir 2 per row*/
+    grid-column: span 1; 
+    text-align: center;
+  }
+  .popular img {
+    margin: 0 auto; 
   }
   .latest {
     grid-column: 1/-1;
+    text-align: center; 
   }
   .latest img {
-    margin-left: 75px;
+    margin: 0 auto; 
+  }
+
+  .btn,
+  .btn2,
+  .btn3,
+  .btn4,
+  .btn5,
+  .btn6,
+  .btn7,
+  .btn8,
+  .btn9 {
+    margin: 10px auto; 
   }
 }
 @media screen and (min-width: 1400px) {
@@ -238,7 +259,8 @@ nav ul a:hover {
     margin-right: 30px;
   }
   #home img {
-    max-width: none;
+    max-width: none; 
+    width: auto; 
   }
   nav ul a {
     color: rgb(216, 147, 147);

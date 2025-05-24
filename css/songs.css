@@ -49,9 +49,12 @@ body {
 }
 #home img {
   margin-right: 40px;
+  width:120px;
 }
 nav ul a {
   color: rgb(165, 178, 248);
+  transition: 0.5s;
+  margin-top:0;
 }
 nav ul a:hover {
   color: rgb(255, 255, 255);
@@ -118,7 +121,7 @@ nav ul a:hover {
     margin-right: 20px;
   }
   #home img {
-    max-width: 150px;
+    width: auto; 
     margin-right: 0;
     margin-left: 0;
   }
