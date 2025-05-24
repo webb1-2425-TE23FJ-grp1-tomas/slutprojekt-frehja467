@@ -192,6 +192,7 @@ nav ul a:hover {
     margin-right: 20px;
   }
   #home img {
+    max-width: 150px;
     width: auto; 
     margin-right: 0;
     margin-left: 0;
